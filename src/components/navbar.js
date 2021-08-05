@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../components/navbar.css'
 import { Button } from './button';
@@ -18,6 +18,12 @@ function Navbar() {
         }
     };
 
+
+// hides button when screen is made smaller
+    useEffect(() => {
+        showButton()
+    }, []);
+
     window.addEventListener('resize', showButton)
 
 
@@ -25,7 +31,7 @@ function Navbar() {
         <>
         <nav className="navbar">
             <div className="navbar-container">
-                <Link to="/" className="navbar-logo">
+                <Link to="/" className="navbar-logo" onClick= {closeMobileMenu}>
                     Skull Stylist <i className="fas fa-skull" />
                 </Link>
                 <div className='menu-icon' onClick={handleClick}>
