@@ -26,7 +26,7 @@ function Navbar() {
         <nav className="navbar">
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo">
-                    Skull Stylist <i className="fab fa-typo3" />
+                    Skull Stylist <i className="fas fa-skull" />
                 </Link>
                 <div className='menu-icon' onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

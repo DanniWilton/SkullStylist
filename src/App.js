@@ -9,10 +9,10 @@ function App() {
     <Router>
     <Navbar />
     <Switch>
-      <Route path= '/' exact component={Home} />
+      {/* <Route path= '/' exact component={Home} />
       <Route path='/shop' component={Shop} />
       <Route path='/gallery' component={Gallery} />
-      <Route path='/contact' component={Contact} />
+      <Route path='/contact' component={Contact} /> */}
     </Switch>
     </Router>
       
