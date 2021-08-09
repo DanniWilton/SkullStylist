@@ -23,5 +23,8 @@
   "homepage": "https://github.com/DanniWilton/SkullStylist#readme",
   "devDependencies": {
     "concurrently": "^6.2.0"
+  },
+  "dependencies": {
+    "react-image-gallery": "^1.2.6"
   }
 }
