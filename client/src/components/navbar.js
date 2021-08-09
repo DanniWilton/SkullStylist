@@ -2,6 +2,7 @@ import React, {useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css'
 import { Button } from './button';
+ 
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -53,8 +54,14 @@ function Navbar() {
                             Gallery
                         </Link>
                     </li>
+                    <li className= 'nav-item'>
+                        <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
+                            Contact
+                        </Link>
+                    </li>
+
                 </ul>
-                {button && <Button buttonStyle='btn--outline'>CONTACT</Button>}
+                {button && <Button buttonStyle='btn--outline'>STYLE YOUR SKULL</Button>}
 
             </div>
         </nav>

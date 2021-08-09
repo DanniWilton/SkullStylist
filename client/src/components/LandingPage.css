@@ -1,12 +1,13 @@
 .hero-container {
-    background-image: url('../rachel-kelli-EIYA7E626Xk-unsplash.jpg') center center/cover no-repeat;
+    background-color: whitesmoke;
+    background-image: url(../rockywall/rockywall.png);
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); */
     object-fit: contain;
 }
 
@@ -34,8 +35,12 @@
 .btn-mobile {
     display: block;
     text-decoration: none;
+    color: black;
 }
 
 .btn {
     width: 100%;
+    color: purple;
 }
+
+
