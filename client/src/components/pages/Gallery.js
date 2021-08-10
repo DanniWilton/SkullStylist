@@ -1,28 +1,42 @@
-import React, { Component } from 'react';
-// import ReactDOM from 'react-dom';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
-import Lulu from '../gallery-images/Lulu.jpg';
-import Sammy from '../gallery-images/Sammy.jpg';
-import TikiQueenVintage from '../gallery-images/TikiQueenVinatge.JPG';
-import Velvet from '../gallery-images/Velvet.jpg';
+import React, { useState } from 'react';
+import { SliderData } from './SliderData';
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import '../pages/gallery.css';
 
-class Gallery extends Component {
-  render() {
-    return (
-      <Carousel>
-        <div className="gallery">
-          <img src={Lulu} alt="Lulu Liquer in her Beetle outfit" max-height={720}/>
-          <br />
-          <img src={Sammy} alt="Sammy Sparkles at Miss Burlesque Western Australia 2019" />
-          <img src={TikiQueenVintage} alt="Tiki Queen Vintage and friend at festival"/>
-          <img src={Velvet} alt="Studio shot of Velvet"/>
-        </div>
-      </Carousel>
-    );
+const ImageSlider = ({ slides }) => {
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
+
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
   }
+
+  return (
+    <section className='slider'>
+      <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
+      <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
+      {SliderData.map((slide, index) => {
+        return (
+          <div
+            className={index === current ? 'slide active' : 'slide'}
+            key={index}
+          >
+            {index === current && (
+              <img src={slide.image} alt='travel image' className='image' />
+            )}
+          </div>
+        );
+      })}
+    </section>
+  );
 };
 
-export default Gallery;
-
+export default ImageSlider;
