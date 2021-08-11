@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
-
+// for Fifi to log in to change and update new items
 const userSchema = new Schema({
   username: {
     type: String,

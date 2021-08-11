@@ -12,4 +12,4 @@ export const GalleryData = [
         image: '../gallery-images/Velvet.jpg'
     },
 
-]
+];
