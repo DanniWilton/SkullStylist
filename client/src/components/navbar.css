@@ -28,6 +28,14 @@
     display: flex;
     align-items: center;
   }
+  .logo {
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
   
   .nav-menu {
     display: grid;

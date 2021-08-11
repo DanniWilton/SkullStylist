@@ -1,34 +1,32 @@
-.slider {
-    position: relative;
-    height: 100vh;
+.Gallery {
+    display: flex;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 30px rgb(101, 2, 121);
+    object-fit: contain;
+    margin: 25px;
+    
+}
+.App {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.imageFrame1 {
     display: flex;
     justify-content: center;
+    height: 500px;
+    width: 400px;
+}
+
+.App > h1 {
+    color:rgba(0, 0, 0, 0.2);
+    font-size: 100px;
+    margin-top: 100px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-
-.image {
-    width: 1000px;
-    height: 600px;
-    border-radius: 10px;
-}
-
-.right-arrow {
-    position: absolute;
-    top: 50%;
-    right: 32px;
-    font-size: 3rem;
-    color: black;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-}
-.left-arrow {
-    position: absolute;
-    top: 50%;
-    left: 32px;
-    font-size: 3rem;
-    color: black;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
+    object-fit: contain;
+    
 }

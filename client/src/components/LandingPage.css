@@ -43,4 +43,13 @@
     color: purple;
 }
 
-
+.landingImage1 {
+    width: 25vw;
+    position: absolute;
+    top: 10vh;
+    left: 5vw;
+    object-fit: contain;
+    display: flex;
+    flex-wrap: wrap;
+    /* opacity: 0.75; */
+}
