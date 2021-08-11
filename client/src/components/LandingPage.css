@@ -53,3 +53,13 @@
     flex-wrap: wrap;
     /* opacity: 0.75; */
 }
+.landingImage2 {
+    width: 25vw;
+    position: absolute;
+    top: 10vh;
+    right: 5vw;
+    object-fit: contain;
+    display: flex;
+    flex-wrap: wrap;
+    /* opacity: 0.75; */
+}
