@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Home from './components/pages/Home'
 import Gallery from './components/pages/Gallery'
+import Contact from './components/pages/Contact'
 
 function App() {
   return (
@@ -13,12 +14,10 @@ function App() {
     <Switch>
       <Route path= '/' exact component={Home} />
       <Route path='/Gallery' component={Gallery} />
-      {/* <Route path='/shop' component={Shop} />
-
-      <Route path='/contact' component={Contact} /> */}
+      {/* <Route path='/shop' component={Shop} /> */}
+      <Route path='/contact' component={Contact} />
     </Switch>
-    </Router>
-      
+    </Router>    
     </>
   );
 }

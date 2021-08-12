@@ -15,11 +15,11 @@ function LandingPage() {
             <div className="hero-btns">
                 <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>View Gallery</Button>
             </div> 
-            <div className='sideImage1'>
+            
             <img className="landingImage1" img src={LandingImage} alt={'Skull Stylist Image 1'}/>
             <img className="landingImage2" img src={LandingImage2} alt={'Skull Stylist Image 2'}/>
         </div>
-        </div>
+        
 
     )
 }
