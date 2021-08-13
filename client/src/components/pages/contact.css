@@ -1,7 +1,10 @@
 .formBox {
     text-align: center;
     font-size: large;
-
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button {

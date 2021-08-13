@@ -9,15 +9,17 @@ import LandingImage2 from './images/LandingImage2.jpg';
 function LandingPage() {
     return (
         <div className='hero-container'>
-            <h1>Skull Stylist</h1>
+            <h1 className="landing-heading">Skull Stylist</h1>
             <p>Bespoke Millinery</p>
             <img className="logo" img src={logo} alt={'skull stylist logo'}/>
             <div className="hero-btns">
                 <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>View Gallery</Button>
             </div> 
             
-            <img className="landingImage1" img src={LandingImage} alt={'Skull Stylist Image 1'}/>
-            <img className="landingImage2" img src={LandingImage2} alt={'Skull Stylist Image 2'}/>
+            <div className="landing-image-container">
+                <img className="landing-image landingImage1" img src={LandingImage} alt={'Skull Stylist Image 1'}/>
+                <img className="landing-image landingImage2" img src={LandingImage2} alt={'Skull Stylist Image 2'}/>
+            </div>
         </div>
         
 
