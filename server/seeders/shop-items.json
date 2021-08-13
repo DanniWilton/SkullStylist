@@ -1,0 +1,81 @@
+[
+    {
+      "name": "Floral Saucer Fascinator",
+      "description": "Pink saucer fascinator with assorted flowers",
+      "image": "/assets/shop-images/Pink-Flora-Saucer.PNG",
+      "price": "$60"
+    },
+    {
+      "name": "Feathered Floral Fascinator",
+      "description": "Brown and taupe feathered floral fascinator",
+      "image": "/assets/shop-images/taupe-fascinator.PNG",
+      "price": "$60"
+    },
+    {
+      "name": "White & Navy Saucer Fascinator",
+      "description": "White and Navy Floral Saucer Fascinator",
+      "image": "/assets/shop-images/White-navy-saucer-fascinator.PNG",
+      "price": "$90"
+    },
+    {
+      "name": "Crystal Flower Hair Comb",
+      "description": "Purple crystal flower hair comb",
+      "image": "/assets/shop-images/crystalflower-purple.PNG",
+      "price": "$10"
+    },
+    {
+      "name": "Crystal Flower Hair Comb",
+      "description": "Pink crystal flower hair comb",
+      "image": "/assets/shop-images/crystalflower-pink.PNG",
+      "price": "$10"
+    },
+    {
+      "name": "Crystal Flower Hair Comb",
+      "description": "Green crystal flower hair comb",
+      "image": "/assets/shop-images/crystalflower-green.PNG",
+      "price": "$10"
+    },
+    {
+      "name": "Silver and White Enchanted Headpiece",
+      "description": "Silver and white antler enchanted headpiece with flowers and pearls",
+      "image": "/assets/shop-images/silver-antler.PNG",
+      "price": "$90"
+    },
+    {
+      "name": "Gold Antler Headpiece",
+      "description": "Gold antler headpiece with flowers and beads",
+      "image": "/assets/shop-images/gold-antler.PNG",
+      "price": "$90"
+    },
+    {
+      "name": "Sinamat Tilt Hat",
+      "description": "Black and White Sinamat Tilt Hat",
+      "image": "/assets/shop-images/b&w-tilt-hat.PNG",
+      "price": "$60"
+    },
+    {
+      "name": "Black, Orange and Teal Fascinator",
+      "description": "Black base fascinator with orange and teal feather detail",
+      "image": "/assets/shop-images/black-orange.PNG",
+      "price": "$40"
+      
+    },
+    {
+      "name": "Golden Roses Hair Comb",
+      "description": "Golden roses hair comb",
+      "image": "/assets/shop-images/goldenhaircomb.PNG",
+      "price": "$15"
+    },
+    {
+      "name": "Red and Black Fascinator",
+      "description": "Red and Black Sinamay Saucer Fascinator",
+      "image": "/assets/shop-images/red-black-saucer.PNG",
+      "price": "$140"
+    },
+    {
+      "name": "Red and Gold Halo",
+      "description": "Red and gold halo headpiece with flowers",
+      "image": "/assets/shop-images/red-gold-halo.PNG",
+      "price": "$150"
+    }
+]
