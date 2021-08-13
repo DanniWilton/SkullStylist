@@ -1,13 +1,32 @@
 .formBox {
     text-align: center;
     font-size: large;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 4px;
+    color: black; 
 }
-
-.button {
+.input-small {
+    width:200px;
+    margin: 10px;
+    color: black;
+    font-size: large;
+}
+.input-small[type=text]:focus {
+    border: 3px solid #555;
+  }
+.input-description {
+    height: 150px;
+    width: 300px;
+    margin: 25px;
+    font-size: large;
+    text-align: start;
+}
+button {
     padding: 12px 26px;
-    font-size: 20px; 
+    font-size: 25px; 
+    background-color: purple;
+    color: white;
 }

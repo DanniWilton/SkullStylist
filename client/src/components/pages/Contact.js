@@ -33,23 +33,23 @@ export default class Form extends React.Component {
         return (
             <div className = "formBox">
             <form>
-                <input 
+                <input className="input-small"
                 name="contactName"
                 placeholder= 'Contact Name' 
                 value={this.state.contactName} 
                 onChange={e => this.change(e)} 
                 />
                 <br />
-                <input 
+                <input className="input-small"
                 name="email"
                 placeholder= 'Email Address' 
                 value={this.state.email} 
                 onChange={e => this.change(e)} 
                 />
                 <br/>
-                <input 
+                <input className="input-description"
                 name="enquiryDescription"
-                placeholder= 'How would you like your skull styled?' 
+                placeholder= 'How would you like your skull styled?' color='black' 
                 value={this.state.enquiryDescription} 
                 onChange={e => this.change(e)} 
                 />
