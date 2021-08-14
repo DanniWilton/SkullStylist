@@ -2,9 +2,9 @@ import React from 'react';
 import Navbar from './components/navbar.js';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
-import Home from './components/pages/Home'
-import Gallery from './components/pages/Gallery'
-import Contact from './components/pages/Contact'
+import Home from './components/pages/Home';
+import Gallery from './components/pages/Gallery';
+import Contact from './components/pages/Contact';
 
 function App() {
   return (

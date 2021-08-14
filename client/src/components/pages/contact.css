@@ -1,4 +1,4 @@
-.formBox {
+.form-box {
     text-align: center;
     font-size: large;
     height: 100vh;
@@ -20,14 +20,16 @@
   }
 .input-description {
     height: 150px;
-    width: 300px;
+    width: 310px;
     margin: 25px;
     font-size: large;
     text-align: start;
+    
 }
 button {
     padding: 12px 26px;
     font-size: 25px; 
     background-color: purple;
     color: white;
+    cursor: pointer;
 }

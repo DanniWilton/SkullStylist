@@ -1,64 +1,90 @@
-import React from 'react';
-import '../pages/contact.css';
+import React, { useState } from 'react';
+import './contact.css';
 
-export default class Form extends React.Component {
-    state = {
-        contactName: '',
-        email: '',
-        enquiryDescription: '',
+// Here we import a helper function that will check if the email is valid
+import { validateEmail } from '../../utils/helpers';
+
+function Form() {
+  // Create state variables for the fields in the form
+  // We are also setting their initial values to an empty string
+  const [email, setEmail] = useState('');
+  const [contactName, setContactName] = useState('');
+  const [inputDescription, setInputDescription] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleInputChange = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    // Based on the input type, we set the state of either email, username, and password
+    if (inputType === 'email') {
+      setEmail(inputValue);
+    } else if (inputType === 'contactName') {
+      setContactName(inputValue);
+    } else if (inputType === 'inputDescription') {
+        setInputDescription(inputValue);
     }
+  };
 
-    change = e => {
-        this.props.onChange({ [e.target.name]: e.target.value });
-        this.setState({
-            [e.target.name]: e.target.value
-        });
-    };
+  const handleFormSubmit = (e) => {
+    // Preventing the default behavior of the form submit (which is to refresh the page)
+    e.preventDefault();
 
-    onSubmit = e => {
-        e.preventDefault();
-        this.setState({
-            contactName: '',
-            email: '',
-            enquiryDescription: '' 
-        });
-        this.props.onChange({
-            contactName: '',
-            email: '',
-            enquiryDescription: ''
-        });
-    };
-
-    render() {
-        return (
-            <div className = "formBox">
-            <form>
-                <input className="input-small"
-                name="contactName"
-                placeholder= 'Contact Name' 
-                value={this.state.contactName} 
-                onChange={e => this.change(e)} 
-                />
-                <br />
-                <input className="input-small"
-                name="email"
-                placeholder= 'Email Address' 
-                value={this.state.email} 
-                onChange={e => this.change(e)} 
-                />
-                <br/>
-                <input className="input-description"
-                name="enquiryDescription"
-                placeholder= 'How would you like your skull styled?' color='black' 
-                value={this.state.enquiryDescription} 
-                onChange={e => this.change(e)} 
-                />
-                <br />
-
-                <button onClick={e => this.onSubmit(e)}>Submit</button>
-            </form>
-            </div>
-        );
+    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
+    if (!validateEmail(email) ) {
+      setErrorMessage('Email is invalid');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
     }
+    alert(`Thank you for your enquiry ${contactName}, Skull Stylist will respond very soon.`);
 
+    // If everything goes according to plan, we want to clear out the input after a successful registration.
+    setContactName('');
+    setEmail('');
+    setInputDescription('');
+    
+  };
+
+  return (
+    <div className= "form-box" >
+      
+      <form className="form">
+      <input className="input-small"
+          value={contactName}
+          name="contactName"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="Contact Name"
+        />
+        <br/>
+        <input className="input-small"
+          value={email}
+          name="email"
+          onChange={handleInputChange}
+          type="email"
+          placeholder="Email Address"
+        />
+        <br/>
+        <textarea className= "input-description"
+          value={inputDescription}
+          name="inputDescription"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="How would you like your Skull Styled?"
+        />
+        <br/>
+        <button type="button" onClick={handleFormSubmit}>Submit</button>
+      </form>
+      {errorMessage && (
+        <div>
+          <p className="error-text">{errorMessage}</p>
+        </div>
+      )}
+    </div>
+  );
 }
+
+export default Form;
