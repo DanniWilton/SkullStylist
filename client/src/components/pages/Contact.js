@@ -23,7 +23,7 @@ export default function ContactUs() {
       <div className="form-box">
         <form onSubmit={sendEmail}>
           <div >
-            <input type="text" className="input-small" placeholder="Name" name="name"/>
+            <input type="text" className="input-small" placeholder="Name" name="from_name"/>
           </div>
           <div>
             <input type="text" className="input-small" placeholder="Email" name="email"/>
