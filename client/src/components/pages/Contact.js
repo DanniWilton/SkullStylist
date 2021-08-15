@@ -22,17 +22,17 @@ export default function ContactUs() {
     <div>
       <div className="form-box">
         <form onSubmit={sendEmail}>
-          <div className="input-small">
-            <input type="text" placeholder="Name" name="name"/>
+          <div >
+            <input type="text" className="input-small" placeholder="Name" name="name"/>
           </div>
-          <div className="input-small">
-            <input type="text" placeholder="Email" name="email"/>
+          <div>
+            <input type="text" className="input-small" placeholder="Email" name="email"/>
           </div>
-          <div className="input-description">
-            <textarea placeholder="How would you like your skull styled?" name="message"></textarea>
+          <div >
+            <textarea className="input-description" placeholder="How would you like your skull styled?" name="message"></textarea>
           </div>
-          <div className="button">
-            <input type="submit" value="Send Message"></input>
+          <div >
+            <button className="button" type="submit" value="Submit">Submit</button>
           </div>
         </form>
       </div>
