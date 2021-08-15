@@ -26,7 +26,7 @@ export default function ContactUs() {
             <input type="text" className="input-small" placeholder="Name" name="from_name"/>
           </div>
           <div>
-            <input type="text" className="input-small" placeholder="Email" name="email"/>
+            <input type="text" className="input-small" placeholder="Email" name="user_email"/>
           </div>
           <div >
             <textarea className="input-description" placeholder="How would you like your skull styled?" name="message"></textarea>
