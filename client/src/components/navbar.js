@@ -35,7 +35,7 @@ function Navbar() {
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo" onClick= {closeMobileMenu}>
                     Skull Stylist  
-                    <i class="fas fa-skull"></i>
+                    <i className="fas fa-skull"></i>
                 </Link>
 
                 <div className='menu-icon' onClick={handleClick}>

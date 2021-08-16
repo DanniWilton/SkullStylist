@@ -20,5 +20,14 @@ export const QUERY_MATCHUPS = gql`
     }
   }
 `;
-
+export const QUERY_SHOPDATA = gql`
+query getShopItems {
+  getShopItems {
+    _id
+    name
+    description
+    image
+    price
+  }
+}`
 //compare to typedefs 
