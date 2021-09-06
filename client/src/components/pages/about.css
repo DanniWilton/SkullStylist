@@ -1,0 +1,24 @@
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    background-image: url(../../rockywall/rockywall.png);
+    
+}
+h1 {
+    font-size: xxx-large;
+    margin-top: 5%;
+    color: purple;
+}
+.about-description {
+    font-size: x-large;
+    margin: 100px;
+    font-weight: bolder;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 15px rgb(69, 59, 71);
+    padding: 5%;
+    text-align: left;
+    color: black;
+}

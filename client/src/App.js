@@ -6,6 +6,7 @@ import Home from './components/pages/Home';
 import Gallery from './components/pages/Gallery';
 import Contact from './components/pages/Contact';
 import Shop from './components/pages/Shop';
+import About from './components/pages/about'
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
 const client = new ApolloClient({
@@ -19,6 +20,7 @@ function App() {
     <Navbar />
     <Switch>
       <Route path= '/' exact component={Home} />
+      <Route path='/About' component={About} />
       <Route path='/Gallery' component={Gallery} />
       <Route path='/shop' component={Shop} />
       <Route path='/contact' component={Contact} />
