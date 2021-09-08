@@ -1,11 +1,5 @@
 [
     {
-      "name": "Floral Saucer Fascinator",
-      "description": "Pink saucer fascinator with assorted flowers",
-      "image": "/assets/shop-images/Pink-Flora-Saucer.PNG",
-      "price": "$60"
-    },
-    {
       "name": "Feathered Floral Fascinator",
       "description": "Brown and taupe feathered floral fascinator",
       "image": "/assets/shop-images/taupe-fascinator.PNG",
@@ -59,12 +53,6 @@
       "image": "/assets/shop-images/black-orange.PNG",
       "price": "$40"
       
-    },
-    {
-      "name": "Golden Roses Hair Comb",
-      "description": "Golden roses hair comb",
-      "image": "/assets/shop-images/goldenhaircomb.PNG",
-      "price": "$15"
     },
     {
       "name": "Red and Black Fascinator",
